@@ -1,6 +1,6 @@
 Nível 1 
 
-#Fogos de artifício.
+#Fogos de artifício
 
 __Introdução:__
 Neste projeto, vamos criar um show de fogos de artifício em uma cidade.
@@ -9,13 +9,11 @@ Neste projeto, vamos criar um show de fogos de artifício em uma cidade.
 
 __Vamos começar importando as imagens do jogo__
 
-1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar
-2. Importe o fundo de tela outdoor/city-with-water
-3. Use o botão __Escolha um sprite do arquivo__ para adicionar um objeto Foguete
-ao projeto (utilize Recursos/foguete.png).
+1. Crie um novo projeto Scratch. Apague o gato clicando nele com o botão direito e em apagar.
+2. Importe o fundo de tela outdoor/city-with-water.
+3. Use o botão __Escolha um sprite do arquivo__ para adicionar um objeto Foguete ao projeto (utilize Recursos/foguete.png).
 4. Faça o foguete desaparecer quando a bandeira verde for clicada.
-5. Também vamos fazer o foguete voar em direção ao mouse quando a teclas espaço for pressionada. 
-Adicione um comando __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direção do mouse:
+5. Também vamos fazer o foguete voar em direção ao mouse quando a tecla espaço for pressionada. Adicione um comando __quando tecla espaço pressionada__, faça o foguete aparecer e deslizar na direção do mouse:
 	
 
 	    quando BANDEIRA clicado
@@ -32,8 +30,7 @@ O foguete aparece e vai em direção ao mouse?
 O que acontece se você mover o mouse e pressionar espaço novamente?
 
 6. Fogos de artifício não andam de lado. Vamos fazer com que ele sempre comece embaixo da tela alinhado com o mouse. 
-Antes de fazer o foguete aparecer, use o comando __vá para__ e faça com que ele vá para a parte de baixo da tela, m
-as que mantenha a sua posição horizontal (x) do mouse.
+Antes de fazer o foguete aparecer, use o comando __vá para__ e faça com que ele vá para a parte de baixo da tela, mas que mantenha a sua posição horizontal (x) do mouse.
 
 
 
@@ -81,8 +78,7 @@ Salve o projeto.
 
 ## Passo 2: Faça o foguete explodir
 
-1. O primeiro passo para fazer o foguete explodir é fazê-lo tocar o som Recursos\bang antes que ele comece a se mover, em seguida, desaparecer,
- uma vez que chegar ao mouse. Para importar um som vá até a aba Sons e clique em importar.
+1. O primeiro passo para fazer o foguete explodir é fazê-lo tocar o som Recursos\bang antes que ele comece a se mover. Depois disso ele deve desaparecer quando chegar ao mouse. Para importar um som vá até a aba Sons e clique em importar.
 
 		quando BANDEIRA clicado
 		desapareça
@@ -115,7 +111,7 @@ Certifique-se de que o foguete faz barulho e desaparece quando atinge o mouse.
 
 3. Importe um novo objeto usando Recursos/explosao.png
 4. Quando ele ouve a mensagem explodir, ele deve desaparecer e, em seguida, mover para a posição do foguete usando o comando __vá para__.
- A explosão deve aparecer, em seguida, desaparecer novamente um segundo depois.
+ A explosão deve aparecer e desaparecer novamente um segundo depois.
 
 
 
@@ -128,10 +124,10 @@ Certifique-se de que o foguete faz barulho e desaparece quando atinge o mouse.
 
 ###Teste o projeto
 
-__Lance um outro foguete.__ 
+__Lance um outro foguete__ 
 
 O foguete é substituído pelo desenho de explosão quando ele explode?
-O que acontece se você mantiver o botão pressionado enquanto move o mouse? (Não se preocupe, nós vamos corrigir isso mais tarde).
+O que acontece se você mantiver o botão pressionado enquanto move o mouse? (Não se preocupe, nós vamos corrigir isso mais tarde.)
 
 Salve o projeto
 
@@ -163,8 +159,8 @@ __Clique na bandeira verde.__
 Cada foguete tem um desenho de explosão diferente?
 
 3. Finalmente, vamos fazer a explosão crescer ao longo do tempo ao invés de simplesmente aparecer. 
-No lugar de esperar um segundo, defina o tamanho do objeto para 5% antes de mostrá-lo, e, em seguida, uma vez que é mostrado, 
-some 2 ao tamanho cinqüenta vezes, usando um bloco de repetição.
+Ao invés de esperar um segundo, defina o tamanho do objeto para 5% antes de mostrá-lo, e, em seguida, uma vez que é mostrado, 
+some 2 ao tamanho cinquenta vezes, usando um bloco de repetição.
 
 
 	    quando eu ouvir [explodir]
@@ -179,14 +175,14 @@ some 2 ao tamanho cinqüenta vezes, usando um bloco de repetição.
 	    desapareça
 
 ###Teste o projeto
-__Clique na bandeira verde.__ 
+__Clique na bandeira verde__ 
 
 A imagem da explosão se espalha a partir do centro e cresce lentamente?
 
 ### Sugestões
-Que tal tentar fazer cada explosão ainda mais original, alterando o tamanho e a velocidade de crescimento da explosão.
+Que tal tentar fazer cada explosão ainda mais original, alterando o tamanho e a velocidade de crescimento da explosão?
 
-Salve seu projeto
+Salve seu projeto.
 
 ## PASSO 4: Correção do problema no anuncio da explosão 
 Você lembra que tínhamos um problema quando mantínhamos pressionado o botão do mouse?
@@ -194,8 +190,7 @@ Isso ocorre porque quando o foguete anuncia sua explosão, ele vai repetir imedi
 antes que a última tenha terminado a exibição.
 
 
-1. Para corrigir isso, podemos substituir o comando anuncie, por um comando anuncie e espere. 
-Desta forma, o ciclo não se repetirá até que a foguete termine de explodir.
+1. Para corrigir isso, podemos substituir o comando anuncie por um comando anuncie e espere. Desta forma, o ciclo não se repetirá até que a foguete termine de explodir.
 
 
 
@@ -213,8 +208,8 @@ Desta forma, o ciclo não se repetirá até que a foguete termine de explodir.
 
 
 ### Teste o projeto
-__Clique na bandeira verde e em seguida, pressione o botão do mouse sobre o palco.__ 
+__Clique na bandeira verde e em seguida pressione o botão do mouse sobre o palco__ 
 
 A imagem da explosão aparece no lugar certo e na hora certa?
 
-Salve seu projeto
+Salve seu projeto.
